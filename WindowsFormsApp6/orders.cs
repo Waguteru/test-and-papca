@@ -20,7 +20,7 @@ namespace WindowsFormsApp6
         private NpgsqlConnection conn;
         private int price;
 
-        private Random random = new Random();
+        private Random random2 = new Random();
 
         public orders(string name, string author,int price,Npgsql.NpgsqlConnection connection)
         {
@@ -42,7 +42,7 @@ namespace WindowsFormsApp6
 
         private string GenerateCod()
         {
-            return random.Next(100,999).ToString();
+            return random2.Next(100,999).ToString();
         }
 
         private void orders_Load(object sender, EventArgs e)
